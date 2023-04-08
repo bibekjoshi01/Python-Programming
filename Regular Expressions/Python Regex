@@ -1,0 +1,37 @@
+----------------------------------------
+|             Python Regex              |
+----------------------------------------
+
+-> Python has a module named re to work with regular expressions.
+    import re
+
+    1. re.findall(pattern, string)
+        -> The re.findall() method returns a list of strings containing all matches.
+
+    2. re.split(pattern, string, max_split)
+        -> The re.split method splits the string where there is a match and
+            returns a list of strings where the splits have occurred.
+        -> max_split = 1; split only at first occurrence, by default max_split = 0; meaning all possible splits
+
+    3. re.sub(pattern, replace, string)
+        -> The method returns a string where matched occurrences are replaced with the content of replace variable.
+        -> If the pattern is not found, re.sub() returns the original string.
+        -> You can pass count as a fourth parameter to the re.sub() method. If omitted, it results to 0.
+            This will replace all occurrences.
+
+    4. re.subn()
+        -> The re.subn() is similar to re.sub() except
+            it returns a tuple of 2 items containing the new string and the number of substitutions made.
+
+    5.  re.search()
+        -> The re.search() method takes two arguments: a pattern and a string.
+            The method looks for the first location where the RegEx pattern produces a match with the string.
+            If the search is successful, re.search() returns a match object; if not, it returns None.
+
+    6. Using r prefix before RegEx
+        -> When r or R prefix is used before a regular expression,
+        it means raw string. For example, '\n' is a new line whereas r'\n' means two characters: a backslash \ followed by n.
+
+        -> Backlash \ is used to escape various characters including all metacharacters.
+        However, using r prefix makes \ treat as a normal character.
+

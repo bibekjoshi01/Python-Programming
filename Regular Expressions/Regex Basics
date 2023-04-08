@@ -1,0 +1,80 @@
+----------------------------------------
+|     Regular Expressions Basics       |
+----------------------------------------
+
+# MetaCharacters
+    -> To specify regular expressions, metacharacters are used.
+    -> Metacharacters are characters that are interpreted in a special way by a RegEx engine.
+
+    * Here's a list of metacharacters: [] . ^ $ * + ? {} () \ |
+
+    1. [] - Square brackets
+        -> Square brackets specifies a set of characters you wish to match.
+            * [a-e] is the same as [abcde]
+            * [1-4] is the same as [1234]
+            * [^abc] means any character except a or b or c
+            * [^0-9] means any non digit character
+
+    2. . - Period
+        -> A period matches any single character (except newline '\n')
+        Example:    Expression: ..
+                        * ac - 1 match    * abcd3 - 2 match     * a - No match
+
+    3. ^ - Caret
+        -> The caret symbol ^ is used to check if a string starts with a certain character
+        Example:    Expression: ^ma
+                        * mango - Matched      * monkey - No Match
+
+    4. $ - Dollar
+        -> The dollar symbol $ is used to check if a string ends with a certain character
+        Example:    Expression: a$
+                        * formula - Matched     * apple - No Match
+
+    5. * - Star
+        -> The star symbol * matches zero or more occurrences of the pattern left to it
+        Example:    Expression: ma*n
+                        * woman - 1 Match       * main - No match (a is not followed by n)
+
+    6. + - Plus
+        -> The plus symbol + matches one or more occurrences of the pattern left to it
+        Example:    Expression: ma+n
+                * woman - 1 Match       * mn - No match (no a character)
+
+    7. ? - Question Mark
+        -> The question mark symbol ? matches zero or one occurrence of the pattern left to it
+        Example:
+
+    8. {} - Braces
+        -> Consider this code: {n,m}. This means at least n, and at most m repetitions of the pattern left to it.
+
+    9. | - Alternation
+        -> Vertical bar | is used for alternation (or operator)
+
+    10. () - Group
+        -> Parentheses () is used to group sub-patterns. For example,
+        -> (a|b|c)xz match any string that matches either a or b or c followed by xz
+
+    11. \ - Backslash
+        -> Backlash \ is used to escape various characters including all metacharacters. For example,
+        -> \$a match if a string contains $ followed by a. Here, $ is not interpreted by a RegEx engine in a special way.
+
+    12. Special Sequences
+        -> \A - Matches if the specified characters are at the start of a string.
+        -> \b - Matches if the specified characters are at the beginning or end of a word.
+        -> \B - Opposite of \b. Matches if the specified characters are not at the beginning or end of a word.
+        -> \d - Matches any decimal digit. Equivalent to [0-9]
+        -> \D - Matches any non-decimal digit. Equivalent to [^0-9]
+        -> \s - Matches where a string contains any whitespace character. Equivalent to [ \t\n\r\f\v].
+        -> \S - Matches where a string contains any non-whitespace character. Equivalent to [^ \t\n\r\f\v].
+        -> \w - Matches any alphanumeric character (digits and alphabets). Equivalent to [a-zA-Z0-9_].
+                By the way, underscore _ is also considered an alphanumeric character.
+        -> \W - Matches any non-alphanumeric character. Equivalent to [^a-zA-Z0-9_]
+        -> \Z - Matches if the specified characters are at the end of a string.
+
+
+
+
+
+
+
+
