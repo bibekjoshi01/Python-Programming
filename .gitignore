@@ -1,2 +1,10 @@
 .idea/
 .idea
+__pycache__/
+*.log
+
+# igonoring enviroments
+venv/
+env/
+.venv/
+.env/

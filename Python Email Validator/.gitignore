@@ -1,0 +1,13 @@
+.idea/
+.git/
+.idea
+__pycache__/
+*.log
+
+.env/
+venv
+.venv/
+env
+.python-version
+eggs/
+.eggs/
