@@ -1,0 +1,9 @@
+# Summary:
+----------------------------------------------------------------
+✅ Inheritance: One class inherits another (class Dog(Animal))
+✅ super(): Calls parent class methods (super().__init__())
+✅ Method Overriding: Child class redefines parent method
+✅ Multiple Inheritance: class D(B, C) (order matters)
+✅ Method Resolution Order (MRO): Python follows C3 Linearization
+✅ Abstract Classes: ABC and @abstractmethod to enforce implementation
+✅ Private & Protected Members: _protected (usable but not recommended), __private (fully hidden)
