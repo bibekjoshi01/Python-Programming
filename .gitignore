@@ -8,3 +8,11 @@ venv/
 env/
 .venv/
 .env/
+
+.pytest_cache
+*.egg-info/ 
+*.egg
+*.egg-info
+*.whl
+*.zip
+*.tar.gz    
