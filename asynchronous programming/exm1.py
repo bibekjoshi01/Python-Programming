@@ -1,7 +1,15 @@
 import asyncio
+import time
 
-async def main():
+def test():
+    print("Test start")
+    time.sleep(10)
+    print("Test ended")
+
+def main():
     print("Start of main corouting")
+    test()
+    print("After test")
 
 
-asyncio.run(main())
+main()
